@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="شركة المنزل العتيق - متخصصون في استيراد الأجهزة الإلكترونية والكهربائية والكهرومنزلية بجودة عالية. يفرن، ليبيا." />
+  <meta name="keywords"
+    content="استيراد أجهزة إلكترونية، أجهزة كهربائية، كهرومنزلية، يفرن، ليبيا، شركة المنزل العتيق" />
+  <meta name="author" content="شركة المنزل العتيق" />
+  <title data-i18n="pageTitle">شركة المنزل العتيق | استيراد الأجهزة الإلكترونية والكهربائية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="nav-logo">
+        <img src="image/logo.png" alt="شعار المنزل العتيق" class="logo-img" onerror="this.style.display='none'" />
+        <div class="logo-text">
+          <span class="logo-name" data-i18n="logoName">المنزل العتيق</span>
+          <span class="logo-sub" data-i18n="logoSub">للاستيراد</span>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-i18n="navHome">الرئيسية</a></li>
+        <li><a href="#about" class="nav-link" data-i18n="navAbout">من نحن</a></li>
+        <li><a href="#services" class="nav-link" data-i18n="navServices">خدماتنا</a></li>
+        <li><a href="#products" class="nav-link" data-i18n="navProducts">منتجاتنا</a></li>
+        <li><a href="#why-us" class="nav-link" data-i18n="navWhyUs">لماذا نحن</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="navContact">تواصل معنا</a></li>
+      </ul>
+      <div class="nav-actions">
+        <!-- Language Toggle -->
+        <button class="lang-toggle" id="langToggle" onclick="switchLanguage()" aria-label="تغيير اللغة">
+          <span class="lang-icon">🌐</span>
+          <span id="langLabel">EN</span>
+        </button>
+        <a href="tel:0926575878" class="btn-nav">
+          <span>📞</span> <span data-i18n="callUs">اتصل بنا</span>
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="القائمة">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span data-i18n="heroBadge">الشركة الرائدة في يفرن</span>
+      </div>
+      <h1 class="hero-title">
+        <span data-i18n="heroTitle1">شركة</span> <span class="text-gold" data-i18n="heroTitle2">المنزل العتيق</span>
+        <br /><span data-i18n="heroTitle3">لاستيراد الأجهزة</span>
+      </h1>
+      <p class="hero-subtitle" data-i18n="heroSubtitle">
+        نوفّر أفضل الأجهزة الإلكترونية والكهربائية والكهرومنزلية المستوردة بجودة عالية وأسعار تنافسية
+        لنصنع معًا منازل أفضل في مدينة يفرن والمنطقة
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary" data-i18n="heroBtn1">تواصل معنا</a>
+        <a href="#products" class="btn-secondary" data-i18n="heroBtn2">استعرض منتجاتنا</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="500">0</span><span class="stat-plus">+</span>
+          <span class="stat-label" data-i18n="stat1">منتج مستورد</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="10">0</span><span class="stat-plus">+</span>
+          <span class="stat-label" data-i18n="stat2">سنوات خبرة</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="1000">0</span><span class="stat-plus">+</span>
+          <span class="stat-label" data-i18n="stat3">عميل راضٍ</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee-wrapper">
+    <div class="marquee-track" id="marqueeTrack">
+      <span data-i18n="mq1">⚡ أجهزة إلكترونية</span>
+      <span data-i18n="mq2">🏠 كهرومنزلية</span>
+      <span data-i18n="mq3">💡 كهربائية</span>
+      <span data-i18n="mq4">📺 شاشات وتلفزيونات</span>
+      <span data-i18n="mq5">❄️ تكييف وتبريد</span>
+      <span data-i18n="mq6">🧺 غسالات وثلاجات</span>
+      <span data-i18n="mq7">📱 أجهزة ذكية</span>
+      <span data-i18n="mq8">🔌 أجهزة منزلية</span>
+      <span data-i18n="mq1">⚡ أجهزة إلكترونية</span>
+      <span data-i18n="mq2">🏠 كهرومنزلية</span>
+      <span data-i18n="mq3">💡 كهربائية</span>
+      <span data-i18n="mq4">📺 شاشات وتلفزيونات</span>
+      <span data-i18n="mq5">❄️ تكييف وتبريد</span>
+      <span data-i18n="mq6">🧺 غسالات وثلاجات</span>
+      <span data-i18n="mq7">📱 أجهزة ذكية</span>
+      <span data-i18n="mq8">🔌 أجهزة منزلية</span>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-image-wrap">
+        <img src="image/about_section_img_1774702228253.jpg" alt="عن شركة المنزل العتيق" class="about-img" />
+      </div>
+      <div class="about-content">
+        <div class="section-tag" data-i18n="aboutTag">من نحن</div>
+        <h2 class="section-title">
+          <span data-i18n="aboutTitle1">شركة رائدة</span>
+          <span class="text-gold" data-i18n="aboutTitle2"> في عالم الاستيراد</span>
+        </h2>
+        <p class="about-desc" data-i18n="aboutDesc1">
+          شركة المنزل العتيق هي شركة متخصصة في استيراد وتوزيع الأجهزة الإلكترونية والكهربائية والكهرومنزلية عالية
+          الجودة. تأسست في مدينة يفرن لتكون الخيار الأول لسكان المنطقة في الحصول على أفضل المنتجات بأسعار تنافسية.
+        </p>
+        <p class="about-desc" data-i18n="aboutDesc2">
+          نحن نحرص على اختيار أفضل العلامات التجارية العالمية ونوفّر ضمانًا على جميع منتجاتنا، مع خدمة ما بعد البيع التي
+          تضمن رضا عملائنا الكرام في جميع الأوقات.
+        </p>
+        <div class="about-features">
+          <div class="feature-item">
+            <div class="feature-icon">✅</div>
+            <span data-i18n="feat1">منتجات مضمونة ذات جودة عالية</span>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🚚</div>
+            <span data-i18n="feat2">توصيل سريع وآمن داخل المنطقة</span>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🤝</div>
+            <span data-i18n="feat3">خدمة عملاء متميزة على مدار الساعة</span>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">💰</div>
+            <span data-i18n="feat4">أسعار تنافسية ومناسبة للجميع</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn-primary" style="display:inline-flex;margin-top:2rem;" data-i18n="aboutBtn">تواصل
+          معنا الآن</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-i18n="servicesTag">خدماتنا</div>
+        <h2 class="section-title">
+          <span data-i18n="servicesTitle1">ما الذي</span>
+          <span class="text-gold" data-i18n="servicesTitle2"> نقدمه لك؟</span>
+        </h2>
+        <p class="section-subtitle" data-i18n="servicesSubtitle">نوفر مجموعة شاملة من الأجهزة المستوردة لتلبية احتياجات
+          كل منزل وعمل</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" id="svc-1">
+          <div class="service-icon-wrap">
+            <div class="service-icon">📺</div>
+          </div>
+          <h3 data-i18n="svc1Title">أجهزة إلكترونية</h3>
+          <p data-i18n="svc1Desc">تلفزيونات، شاشات، أنظمة صوت، أجهزة حاسوب ولاب توب، وأجهزة ذكية متنوعة من أفضل العلامات
+            التجارية العالمية.</p>
+          <div class="service-line"></div>
+        </div>
+        <div class="service-card" id="svc-2">
+          <div class="service-icon-wrap">
+            <div class="service-icon">⚡</div>
+          </div>
+          <h3 data-i18n="svc2Title">أجهزة كهربائية</h3>
+          <p data-i18n="svc2Desc">أجهزة كهربائية متنوعة للمنزل والمكتب بمعايير جودة عالية وكفاءة طاقة ممتازة لتوفير
+            الاستهلاك وضمان الأداء.</p>
+          <div class="service-line"></div>
+        </div>
+        <div class="service-card" id="svc-3">
+          <div class="service-icon-wrap">
+            <div class="service-icon">🏠</div>
+          </div>
+          <h3 data-i18n="svc3Title">أجهزة كهرومنزلية</h3>
+          <p data-i18n="svc3Desc">غسالات، ثلاجات، مكيفات، مواقد، ومعدات المطبخ الحديثة لتجعل منزلك أكثر راحة وعصرية في
+            كل وقت.</p>
+          <div class="service-line"></div>
+        </div>
+        <div class="service-card" id="svc-4">
+          <div class="service-icon-wrap">
+            <div class="service-icon">❄️</div>
+          </div>
+          <h3 data-i18n="svc4Title">تكييف وتبريد</h3>
+          <p data-i18n="svc4Desc">أجهزة تكييف ومبردات هواء بأحدث التقنيات ومن أفضل الشركات العالمية المتخصصة في منظومات
+            التبريد والتدفئة.</p>
+          <div class="service-line"></div>
+        </div>
+        <div class="service-card" id="svc-5">
+          <div class="service-icon-wrap">
+            <div class="service-icon">📱</div>
+          </div>
+          <h3 data-i18n="svc5Title">الأجهزة الذكية</h3>
+          <p data-i18n="svc5Desc">هواتف ذكية، أجهزة لوحية، ساعات ذكية، وملحقاتها من أحدث الإصدارات العالمية بأسعار
+            مناسبة للجميع.</p>
+          <div class="service-line"></div>
+        </div>
+        <div class="service-card" id="svc-6">
+          <div class="service-icon-wrap">
+            <div class="service-icon">🔧</div>
+          </div>
+          <h3 data-i18n="svc6Title">خدمة ما بعد البيع</h3>
+          <p data-i18n="svc6Desc">نوفر خدمة متكاملة لما بعد البيع تشمل الضمان والصيانة والدعم الفني لضمان رضا عملائنا
+            الكرام في كل وقت.</p>
+          <div class="service-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section class="products section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-i18n="productsTag">منتجاتنا</div>
+        <h2 class="section-title">
+          <span data-i18n="productsTitle1">أبرز</span>
+          <span class="text-gold" data-i18n="productsTitle2"> منتجاتنا المستوردة</span>
+        </h2>
+        <p class="section-subtitle" data-i18n="productsSubtitle">نستورد لك أفضل المنتجات بمعايير جودة دولية عالية</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card" id="prod-1">
+          <div class="product-icon">📺</div>
+          <h4 data-i18n="prod1Title">شاشات وتلفزيونات</h4>
+          <p data-i18n="prod1Desc">أحدث تقنيات العرض OLED/QLED/4K</p>
+        </div>
+        <div class="product-card" id="prod-2">
+          <div class="product-icon">🧺</div>
+          <h4 data-i18n="prod2Title">غسالات ملابس</h4>
+          <p data-i18n="prod2Desc">أتوماتيك وشبه أتوماتيك بكفاءة عالية</p>
+        </div>
+        <div class="product-card" id="prod-3">
+          <div class="product-icon">❄️</div>
+          <h4 data-i18n="prod3Title">ثلاجات ومجمدات</h4>
+          <p data-i18n="prod3Desc">بأحجام وتصاميم متعددة تناسب كل احتياج</p>
+        </div>
+        <div class="product-card" id="prod-4">
+          <div class="product-icon">🌬️</div>
+          <h4 data-i18n="prod4Title">مكيفات هواء</h4>
+          <p data-i18n="prod4Desc">موفرة للطاقة وبقدرات تبريد متنوعة</p>
+        </div>
+        <div class="product-card" id="prod-5">
+          <div class="product-icon">🍳</div>
+          <h4 data-i18n="prod5Title">أجهزة المطبخ</h4>
+          <p data-i18n="prod5Desc">مواقد، أفران، مايكروويف، وخلاطات</p>
+        </div>
+        <div class="product-card" id="prod-6">
+          <div class="product-icon">💻</div>
+          <h4 data-i18n="prod6Title">حاسوب ولاب توب</h4>
+          <p data-i18n="prod6Desc">أجهزة كمبيوتر بمواصفات عالية لكل الأغراض</p>
+        </div>
+        <div class="product-card" id="prod-7">
+          <div class="product-icon">📱</div>
+          <h4 data-i18n="prod7Title">هواتف ذكية</h4>
+          <p data-i18n="prod7Desc">أحدث إصدارات الهواتف من شركات عالمية</p>
+        </div>
+        <div class="product-card" id="prod-8">
+          <div class="product-icon">🔌</div>
+          <h4 data-i18n="prod8Title">ملحقات إلكترونية</h4>
+          <p data-i18n="prod8Desc">كابلات، شواحن، سماعات، وإكسسوارات متنوعة</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="why-us section" id="why-us">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-i18n="whyTag">لماذا نحن؟</div>
+        <h2 class="section-title">
+          <span data-i18n="whyTitle1">ما يميزنا عن</span>
+          <span class="text-gold" data-i18n="whyTitle2"> الآخرين</span>
+        </h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card" id="why-1">
+          <div class="why-num">01</div>
+          <div class="why-icon">🏆</div>
+          <h3 data-i18n="why1Title">جودة مضمونة</h3>
+          <p data-i18n="why1Desc">نلتزم باختيار أفضل المنتجات ذات الجودة العالية والمعتمدة دوليًا لضمان رضا عملائنا.</p>
+        </div>
+        <div class="why-card" id="why-2">
+          <div class="why-num">02</div>
+          <div class="why-icon">💎</div>
+          <h3 data-i18n="why2Title">أسعار تنافسية</h3>
+          <p data-i18n="why2Desc">نوفر أفضل الأسعار في السوق مع الحفاظ على جودة المنتجات لتناسب ميزانية كل عميل.</p>
+        </div>
+        <div class="why-card" id="why-3">
+          <div class="why-num">03</div>
+          <div class="why-icon">🌍</div>
+          <h3 data-i18n="why3Title">استيراد مباشر</h3>
+          <p data-i18n="why3Desc">نستورد مباشرة من المصانع العالمية مما يضمن أصالة المنتج وتوفير أفضل الأسعار للعميل.
+          </p>
+        </div>
+        <div class="why-card" id="why-4">
+          <div class="why-num">04</div>
+          <div class="why-icon">🛡️</div>
+          <h3 data-i18n="why4Title">ضمان الشراء</h3>
+          <p data-i18n="why4Desc">جميع منتجاتنا تأتي مع ضمان رسمي وخدمة ما بعد البيع لراحة بالك التامة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <div class="section-tag" data-i18n="contactTag">تواصل معنا</div>
+        <h2 class="section-title">
+          <span data-i18n="contactTitle1">نحن هنا</span>
+          <span class="text-gold" data-i18n="contactTitle2"> لخدمتك</span>
+        </h2>
+        <p class="contact-desc" data-i18n="contactDesc">
+          تواصل معنا لأي استفسار حول منتجاتنا أو للحصول على عرض أسعار. فريقنا مستعد للرد عليك في أسرع وقت ممكن.
+        </p>
+        <div class="contact-items">
+          <a href="tel:0926575878" class="contact-item" id="contact-phone">
+            <div class="contact-icon">📞</div>
+            <div class="contact-detail">
+              <span class="contact-label" data-i18n="phoneLabel">رقم الهاتف</span>
+              <span class="contact-value">0926575878</span>
+            </div>
+          </a>
+          <a href="https://maps.app.goo.gl/NFA8djjHorTNAHUPA?g_st=ic" target="_blank" class="contact-item"
+            id="contact-location">
+            <div class="contact-icon">📍</div>
+            <div class="contact-detail">
+              <span class="contact-label" data-i18n="locationLabel">الموقع</span>
+              <span class="contact-value" data-i18n="locationValue">مدينة يفرن، ليبيا</span>
+            </div>
+          </a>
+          <div class="contact-item" id="contact-hours">
+            <div class="contact-icon">🕐</div>
+            <div class="contact-detail">
+              <span class="contact-label" data-i18n="hoursLabel">ساعات العمل</span>
+              <span class="contact-value" data-i18n="hoursValue">السبت - الخميس: 9:00 ص - 9:00 م</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map Embed -->
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?q=32.063,12.527&z=15&output=embed" width="100%" height="220"
+            frameborder="0" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
+            title="موقع شركة المنزل العتيق - يفرن"></iframe>
+          <a href="https://maps.app.goo.gl/NFA8djjHorTNAHUPA?g_st=ic" target="_blank" class="map-link-btn">
+            📍 <span data-i18n="mapBtn">عرض على خرائط Google</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <img src="image/logo.png" alt="شركة المنزل العتيق" class="logo-img" onerror="this.style.display='none'" />
+        <div class="logo-text">
+          <span class="logo-name" data-i18n="logoName">المنزل العتيق</span>
+          <span class="logo-sub" data-i18n="logoSub">للاستيراد</span>
+        </div>
+      </div>
+      <p class="footer-tagline" data-i18n="footerTagline">استيراد الأجهزة الإلكترونية والكهربائية
+        والكهرومنزلية<br />مدينة يفرن، ليبيا</p>
+      <div class="footer-links">
+        <a href="#home" data-i18n="navHome">الرئيسية</a>
+        <a href="#about" data-i18n="navAbout">من نحن</a>
+        <a href="#services" data-i18n="navServices">خدماتنا</a>
+        <a href="#products" data-i18n="navProducts">منتجاتنا</a>
+        <a href="#contact" data-i18n="navContact">تواصل معنا</a>
+      </div>
+      <div class="footer-contact">
+        <a href="tel:0926575878" class="footer-phone">📞 0926575878</a>
+        <a href="https://maps.app.goo.gl/NFA8djjHorTNAHUPA?g_st=ic" target="_blank" class="footer-loc">📍 <span
+            data-i18n="locationValue">مدينة يفرن، ليبيا</span></a>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="footer-copy" data-i18n="footerCopy">© 2024 شركة المنزل العتيق. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">↑</button>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
