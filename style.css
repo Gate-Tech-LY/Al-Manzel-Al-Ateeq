@@ -991,7 +991,7 @@ a.contact-item:hover {
   flex-wrap: wrap;
   margin-bottom: 28px;
 }
-.footer-phone, .footer-loc {
+.footer-phone, .footer-loc, .footer-email {
   color: var(--gold-light);
   font-size: 0.9rem;
   font-weight: 600;
@@ -1000,7 +1000,7 @@ a.contact-item:hover {
   align-items: center;
   gap: 6px;
 }
-.footer-phone:hover, .footer-loc:hover { color: var(--gold); }
+.footer-phone:hover, .footer-loc:hover, .footer-email:hover { color: var(--gold); }
 .footer-divider {
   height: 1px;
   background: rgba(255,255,255,0.08);
